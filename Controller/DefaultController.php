@@ -24,7 +24,7 @@ class DefaultController extends Controller
      * @param bool|null $valid If the form was sent, its contain if the message has sent
      * @return Response
      *
-     * @Get("/contacto", name="vzenix_contact")
+     * @Get("/contact", name="vzenix_contact")
      */
     public function indexAction(Request $iRequest, $valid = null)
     {
@@ -50,7 +50,7 @@ class DefaultController extends Controller
 
     /**
      * Action
-     * @Post("/contacto")
+     * @Post("/contact")
      * @return Response
      */
     public function sendFormAction(Request $iRequest)
