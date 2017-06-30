@@ -61,9 +61,9 @@ contact:
     
     # Configuration for mailing form (require swiftmailer=true)
     mail:
-        subject: "Formulario de contacto de vzenix.es"
-        to: "paco@vzenix.es"
-        from: "vzenixmailer@gmail.com"
+        subject: "Subject for mail"
+        to: "<your email>"
+        from: "your email"
 
     # templates to use in website and mailing
     templates:
@@ -89,49 +89,40 @@ Step 5: Personalize web template
 
         <div class="container">
             <header class="major" id="messages_zone">
-                <h2>Formulario de contacto</h2>
-                <p>Si necesitas contactar directamente con alguno de los autores
-                    puedes hacerlo desde este formulario</p>
+                <h2>Form contact</h2>
+                <p>Lorem.</p>
             </header>
 
             <section class="error-form fade{% if messages_error != true %} hide{% endif %}">
-                Recuerda completar todos los campos del formulario correctamente
-                <br />
-                En el campo anti-robots solo tienes que indicar el resultado de la suma
+                Ups, cannot send the form, review field and try again
             </section>
 
             <section class="ok-form fade{% if messages_sent != true %} hide{% endif %}">
-                Todo perfecto, tu mensaje se envío correctamente.
+                All is ok.
             </section>
 
             <!-- Form -->
             <section>
 
-                <h3>Formulario a rellenar para contactar directamente con alguno
-                    de los autores</h3>
+                <h3>Lorem.</h3>
 
                 <form method="post" action="#">
                     <div class="row uniform 50%">
                         <div class="6u 12u$(xsmall)">
-                            <input type="text" name="name" id="name" value="{{autocomplete.name}}" placeholder="Nombre" />
+                            <input type="text" name="name" id="name" value="{{autocomplete.name}}" placeholder="Name" />
                         </div>
                         <div class="6u$ 12u$(xsmall)">
                             <input type="email" name="email" id="email" value="{{autocomplete.email}}" placeholder="Email" />
                         </div>
                         <div class="12u$">
-                            <input type="text" name="calculator" id="calculator" value="" placeholder="Cuanto es el resultado de {{robot}} = ?" />
+                            <input type="text" name="calculator" id="calculator" value="" placeholder="Type the result of {{robot}} = ?" />
                         </div>
                         <div class="12u$">
-                            <textarea name="message" id="message" placeholder="Introduce aquí tu mensaje" rows="6">{{autocomplete.message}}</textarea>
-                        </div>
-                        <div class="12u$">
-                            <input type="checkbox" id="condiciones" name="condiciones" checked disabled />
-                            <label for="condiciones">Al contactar acepto las condiciones de uso descritas
-                                en el apartado "Acerca de" de la web</label>
+                            <textarea name="message" id="message" placeholder="Your message" rows="6">{{autocomplete.message}}</textarea>
                         </div>
                         <div class="12u$">
                             <ul class="actions">
-                                <li><input type="submit" value="Envíar mensaje" class="special" /></li>
+                                <li><input type="submit" value="Send message" class="special" /></li>
                                 <li><input type="reset" value="Reset" /></li>
                             </ul>
                         </div>
