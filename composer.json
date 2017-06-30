@@ -1,0 +1,32 @@
+{
+    "name": "vzenix/contactbundle",
+    "description": "Symfony Bundle for create a simple contact form",
+    "type": "symfony-bundle",
+    "homepage": "https://github.com/vzenix/ContactBundle/",
+    "license": "GNU General Public License v3",
+    "authors": [
+        {
+            "name": "Francisco Muros Espadas",
+            "email": "paco@vzenix.es",
+            "homepage": "http://vzenix.es/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "symfony.contactbundle@vzenix.es"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "VZenix\\Bundle\\ContactBundle"
+        }
+    },
+    "keywords": ["vzenix", "symfony", "bundle", "contact", "contact form"],
+    "require": {
+        "php": ">=7.0.0",
+        "symfony/framework-bundle": ">=3.3",
+        "symfony/symfony": ">=3.3",
+        "doctrine/doctrine-bundle": ">=1.6",
+        "symfony/swiftmailer-bundle": ">=2.3",
+        "friendsofsymfony/rest-bundle": ">=2.2"
+    }
+}

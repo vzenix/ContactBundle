@@ -1,0 +1,22 @@
+
+
+# Crear la estructura de BBDD en el esquema
+
+## Symfony
+´´´
+php bin/console doctrine:schema:update --force
+´´´
+
+## MySQL SQL
+
+´´´
+CREATE TABLE `contact_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` datetime NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `message` longtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+´´´
+
