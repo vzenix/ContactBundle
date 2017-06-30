@@ -104,6 +104,7 @@ class ContactEntity
     /**
      * Set the name
      * @param string $name
+     * @return ContactEntity
      */
     public function setName(string $name)
     {
@@ -114,6 +115,7 @@ class ContactEntity
     /**
      * Set the email
      * @param string $email
+     * @return ContactEntity
      */
     public function setEmail(string $email)
     {
@@ -124,6 +126,7 @@ class ContactEntity
     /**
      * Set message
      * @param string $message
+     * @return ContactEntity
      */
     public function setMessage(string $message)
     {
@@ -133,9 +136,7 @@ class ContactEntity
 
     /**
      * Set date
-     *
      * @param \DateTime $date
-     *
      * @return ContactEntity
      */
     public function setDate($date)
