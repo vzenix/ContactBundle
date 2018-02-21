@@ -3,7 +3,7 @@
     "description": "Symfony Bundle for create a simple contact form",
     "type": "symfony-bundle",
     "homepage": "https://github.com/vzenix/ContactBundle/",
-    "license": "GNU General Public License v3",
+    "license": "CC-BY-NC-4.0",
     "authors": [
         {
             "name": "Francisco Muros Espadas",
